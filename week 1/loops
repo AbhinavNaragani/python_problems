@@ -1,0 +1,11 @@
+color = ['a','b','c']
+for i in color:
+    print(i)
+
+color = {'a' : '22', 'b': '23','c': '25'}
+for i in color:
+    print(i, "color value is", color[i])
+    
+colors = {'red', 'blue', 'yellow'}
+print( [ color.upper() for color in colors ] )
+print( [ color for color in colors if color.startswith('b')])

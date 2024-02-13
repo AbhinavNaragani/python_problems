@@ -1,0 +1,3 @@
+def compare_strings(string_one, string_two):
+    return string_one == string_two
+print(compare_strings("hello", "hel"))

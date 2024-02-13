@@ -1,0 +1,28 @@
+countries = {'usa': '223', 'india': '224', 'china': '400', 'japan': '290'}
+max_guesses = 2
+
+def guess_game():
+    print("What is the population of India (in millions)?", 
+          "\na: 223\n",
+          "b: 224\n",
+          "c: 400\n",
+          "d: 290\n")
+
+guess_count = 0
+guess_game()  # Call the function to print the question
+entry = input("Enter the population number: ")
+entry = int(entry)
+if entry == 224:
+    print("Your answer is correct")
+else:
+    print("Given answer is wrong. You have one more chance to guess the answer")
+    guess_count += 1
+    entry = input("Enter the population number: ")
+    entry = int(entry)
+    if entry == 224:
+        print("Your answer is correct")
+    else:
+        print("Given answer is wrong. You have failed to guess the correct answer")
+
+if guess_count == max_guesses:
+    print("You have reached your limit")
